@@ -1,0 +1,460 @@
+/* -------------------- DEBUG -------------------- */
+
+[debug],
+[debug] * {
+  outline: solid 1px #9400ff;
+  box-shadow: none;
+  filter: none;
+}
+
+/* -------------------- GLOBAL RULE -------------------- */
+:root {
+  --tomate: #92391e;
+  --black: #000000;
+  --bred: #bd903c;
+  --wood: #c5b6b0;
+}
+
+@font-face {
+  font-family: Black-Burger;
+  src: url("../font/Black-Burger-Rough.ttf");
+}
+
+body {
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  background-color: var(--wood);
+}
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+h1 {
+  font-size: 5vw;
+  font-family: Black-Burger;
+  color: var(--tomate);
+  margin-bottom: 2rem;
+  margin-left: 4rem;
+}
+
+h3 {
+  font-size: 2rem;
+  font-family: Black-Burger;
+  color: var(--tomate);
+  margin-bottom: 2rem;
+}
+
+h4 {
+  font-family: Black-Burger;
+  color: var(--tomate);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.button-left {
+  margin: 1rem;
+  padding: 0.7rem;
+  color: var(--tomate);
+  font-weight: bold;
+  background-color: var(--bred);
+  border-radius: 0.25rem;
+  transform: rotate(-2deg);
+  text-align: center;
+}
+.mobile-nav {
+  display: none;
+}
+
+/* -------------------- NAVIGATION -------------------- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 10px;
+  padding-left: 10px;
+  height: 4rem;
+  position: relative;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-start;
+}
+nav li {
+  margin-right: 10px;
+  margin-left: 10px;
+  color: var(--tomate);
+}
+/* -------------------- HERO -------------------- */
+.hero {
+  display: flex;
+  align-items: flex-end;
+  background-image: url("../img/hero.png");
+  justify-content: left;
+  height: 55vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.free-shipping {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bred);
+  padding: 0.2rem 0.2rem;
+}
+.free-shipping p {
+  flex: 1;
+  text-align: center;
+}
+.free-shipping svg {
+  display: flex;
+  padding: 0.3rem;
+}
+/* -------------------- NOS BURGERS -------------------- */
+.top-collection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  position: relative;
+}
+
+.top-collection p {
+  position: absolute;
+  right: 3.1rem;
+}
+
+.top-collection svg {
+  width: 1.8rem;
+  height: 1.8rem;
+  position: absolute;
+  right: -2rem;
+  top: -0.4rem;
+}
+
+.scrolling-gallery {
+  display: flex;
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  margin-bottom: 3rem;
+  padding: 0rem 2rem 0 0;
+  margin: 0rem 1rem 0 0;
+}
+
+.scrolling-gallery::-webkit-scrollbar {
+  display: none;
+}
+
+.scrolling-element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0rem 0.9rem;
+  flex: none;
+  padding-bottom: 1rem;
+}
+.scrolling-element img {
+  width: 14rem;
+
+  object-fit: cover;
+}
+.scrolling-element p {
+  font-weight: bold;
+  margin: 0.3rem;
+}
+
+.scrolling-element a {
+  border-bottom: 0.25rem solid var(--bred);
+  padding: 0.3rem;
+}
+/* -------------------- NOS MEILLEURES VENTES -------------------- */
+.catalog {
+  background-image: url("../img/background3.jpg");
+  background-repeat: repeat;
+  background-size: 11rem;
+}
+.top-catalog {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  height: 5rem;
+}
+
+.top-catalog p {
+  position: absolute;
+  right: 4rem;
+  background-color: var(--bred);
+  border-radius: 50%;
+  width: 7rem;
+  height: 7rem;
+  top: -3.5rem;
+  padding: 2.3rem 1rem;
+  text-align: center;
+}
+
+.catalog-product {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.catalog-element {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 40vw;
+  margin: 2rem;
+  background-color: var(--wood);
+  justify-content: center;
+}
+
+.catalog-element-ing-border {
+  overflow: hidden;
+}
+.catalog-element-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem;
+}
+.catalog-product img {
+  object-fit: cover;
+  transition: transform 0.5s;
+  flex: 1 1 40rem;
+}
+.catalog-product img:hover {
+  transform: scale(1.08);
+}
+.button-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10rem;
+}
+.catalog .button {
+  padding: 0.8rem;
+  color: var(--tomate);
+  font-weight: bold;
+  background-color: var(--bred);
+  border-radius: 0.25rem;
+}
+.sauces {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ketchup {
+  border-radius: 50%;
+  background-color: #ce2522;
+  width: 1rem;
+  height: 1rem;
+  margin: 0 0.2rem;
+}
+.mayonaise {
+  border-radius: 40rem;
+  background-color: #faf6e6;
+  width: 1rem;
+  height: 1rem;
+  margin: 0 0.2rem;
+}
+.buy-button {
+  background-color: var(--bred);
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  color: var(--tomate);
+  font-weight: bold;
+}
+/* --------------------  NOTRE PHILOSOPHIE  -------------------- */
+.text-bloc {
+  background-image: url("../img/lot-of-burger.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+.text-bloc-div {
+  background-color: var(--wood);
+  width: 40rem;
+  margin: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 3rem;
+}
+.text-bloc-div p {
+  margin: 1rem;
+}
+
+.button {
+  font-size: 1rem;
+  align-self: center;
+  margin: 1rem;
+  padding: 0.5rem 0.8rem;
+  color: var(--tomate);
+  font-weight: bold;
+  background-color: var(--bred);
+  border-radius: 0.25rem;
+  text-align: center;
+  border: none;
+}
+/* --------------------  E-MAIL  -------------------- */
+.email-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+.email-area p {
+  padding: 1.5rem;
+}
+.email-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+.input-email {
+  /* padding: 1rem 4rem; */
+  height: 3rem;
+  padding: 0rem 2rem;
+  border-right: 0.1rem solid var(--black);
+  background-color: var(--wood);
+  border: 0.1rem solid var(--black);
+}
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+label {
+  border-top: 0.1rem solid var(--black);
+  border-right: 0.1rem solid var(--black);
+  border-bottom: 0.1rem solid var(--black);
+  height: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+::placeholder {
+  color: var(--black);
+  text-align: center;
+}
+.input-submit {
+  display: none;
+}
+
+/* --------------------  FOOTER  -------------------- */
+footer {
+  background-color: var(--bred);
+}
+
+.footer-element {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 0;
+}
+.social-box svg {
+  margin: 1rem;
+}
+/* --------------------  SMALL SCREEN RULES  -------------------- */
+@media (max-width: 600px) {
+  .sauces {
+    display: none;
+  }
+}
+
+@media (max-width: 720px) {
+  .desktop-nav {
+    display: none;
+  }
+  .mobile-nav {
+    display: flex;
+  }
+  .mobile-nav svg {
+    color: var(--tomate);
+  }
+  .mobile-nav ul {
+    display: flex;
+    flex-direction: column;
+    top: 3rem;
+    left: 0rem;
+    position: absolute;
+    width: 100%;
+    background-color: var(--wood);
+  }
+  .mobile-nav li {
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+  }
+}
+.open .mobile-nav ul {
+  display: none;
+}
+.free-shipping-close {
+  display: none;
+}
+
+@media (max-width: 1080px) {
+  .catalog-element {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 40rem;
+    background-color: var(--wood);
+    justify-content: center;
+  }
+
+  .text-bloc-div {
+    display: flex;
+    width: 95vw;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .footer-element {
+    padding: 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+  }
+  footer p {
+    padding: 0.5rem;
+  }
+  .top-catalog p {
+    display: none;
+  }
+}
+
+/* --------------------  BIG SCREEN RULES  -------------------- */
+@media (min-width: 1520px) {
+  .scrolling-gallery {
+    justify-content: center;
+    margin: 0;
+  }
+}
+
+/* The progress container (grey background) */
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: var(--wood);
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 8px;
+  background: var(--tomate);
+  width: 0%;
+}
+.scroll-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: var(--wood);
+}
