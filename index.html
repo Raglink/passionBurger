@@ -1,5 +1,17 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <!-- TODO: 
+    - change images to open sources and add sources 
+    - update and clean JS
+    - check responsive display + add dynamic images (without netlify)
+    - add CSS animations
+    - audit with lighthouse 
+  -->
+  <!-- 
+    FIXME:
+    responsive nav bar
+  -->
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -37,7 +49,7 @@
       <h1>La passion <br />du burger</h1>
     </section>
     <div class="free-shipping">
-      <p>Free shipping today only!</p>
+      <p>Livraison gratuite aujourd'hui</p>
       <svg class="close"
         xmlns="http://www.w3.org/2000/svg"
         width="48"
@@ -76,7 +88,7 @@
       </div>
       <div class="scrolling-gallery">
         <div class="scrolling-element">
-          <img src="./img/fernand.png" alt="Le big fernand" />
+          <span>Photo by <a href="https://unsplash.com/@amir_v_ali?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">amirali mirhashemian</a> on <a href="https://unsplash.com/s/photos/burger?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
           <p>Le big fernand</p>
           <a href="#">Découvrez-le</a>
         </div>
@@ -191,10 +203,11 @@
         <div class="text-bloc-div">
           <h3>Notre philosophie</h3>
           <p>
-            C'est d'être accepté comme je suis ...<br />Lorem ipsum dolor sit
-            amet consectetur adipisicing elit. Asperiores fuga cum quia
-            exercitationem? Velit dicta pariatur culpa a iste perspiciatis,
-            tempora dolorem quam quasi eligendi eos sunt architecto iusto non!
+            <Strong>Cuisiner les meilleures burgers</Strong><br><br>
+            Nous sourçons auprès de nos producteurs locaux les produits de saisons.<br />
+            Nos 3 livraisons par semaines nous garantissent de cuisiner des produits toujours frais.<br />
+            L’expertise de nos cuisiniers dans l’assemblage des saveurs permet de vous proposer des burgers de caractère au gout unique. 
+
           </p>
           <a class="button" href="#">Lire plus</a>
         </div>
