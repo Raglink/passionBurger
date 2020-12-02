@@ -71,6 +71,9 @@ header {
   height: 4rem;
   position: relative;
 }
+#logo {
+  width: 400px;
+}
 
 nav ul {
   display: flex;
