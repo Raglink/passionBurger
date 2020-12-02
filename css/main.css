@@ -15,11 +15,6 @@
   --wood: #c5b6b0;
 }
 
-@font-face {
-  font-family: Black-Burger;
-  src: url("../font/Black-Burger-Rough.ttf");
-}
-
 body {
   font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Helvetica Neue", Arial, "Noto Sans", sans-serif;
@@ -32,7 +27,7 @@ a {
 
 h1 {
   font-size: 5vw;
-  font-family: Black-Burger;
+  font-family: "Fredericka the Great", cursive;
   color: var(--tomate);
   margin-bottom: 2rem;
   margin-left: 4rem;
@@ -40,13 +35,13 @@ h1 {
 
 h3 {
   font-size: 2rem;
-  font-family: Black-Burger;
+  font-family: "Fredericka the Great", cursive;
   color: var(--tomate);
   margin-bottom: 2rem;
 }
 
 h4 {
-  font-family: Black-Burger;
+  font-family: "Fredericka the Great", cursive;
   color: var(--tomate);
   font-weight: bold;
   font-size: 1.2rem;
