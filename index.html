@@ -7,9 +7,11 @@
     - add CSS animations
     - audit with lighthouse 
     - add link to dewemo site on click
+    - add favicon
   -->
   <!-- 
     FIXME:
+    fix responsive image on chrome
     responsive nav bar
   -->
 
@@ -49,6 +51,15 @@
     </header>
     <!-------------------- HERO -------------------->
     <section class="hero">
+      <picture >
+        <source media="(max-width:720px)" srcset="./img/hero-720.jpg">
+        <source media="(min-width:721px)" srcset="./img/hero-1920.jpg">
+        <img
+          src="./img/hero-1920.jpg" 
+          alt="ingrédients pour un hamburger" 
+          id=hero-img
+        >
+        </picture>
       <h1>La passion <br />du burger</h1>
     </section>
     <div class="free-shipping">
