@@ -90,7 +90,7 @@ nav li {
 #hero {
   height: 35vw;
   width: 100%;
-  background-image: url("../img/hero-1920.jpg");
+  background-image: url("../img/hero/hero-1920.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -404,6 +404,9 @@ footer {
   }
   .free-shipping-close {
     display: none;
+  }
+  #hero{
+    background-image: url("../img/hero/hero-720.jpg");
   }
 }
 
