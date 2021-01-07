@@ -177,7 +177,7 @@ nav li {
 }
 /* -------------------- NOS MEILLEURES VENTES -------------------- */
 .catalog {
-  background-image: url("../img/background-catalog.png");
+  background-image: url("../img/background/background-catalog.png");
   background-repeat: repeat;
   background-size: 11rem;
 }
@@ -275,7 +275,7 @@ nav li {
 }
 /* --------------------  NOTRE PHILOSOPHIE  -------------------- */
 .text-bloc {
-  background-image: url("../img/background-philosophy.jpg");
+  background-image: url("../img/background/background-philosophy.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
