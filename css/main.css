@@ -177,7 +177,7 @@ nav li {
 }
 /* -------------------- NOS MEILLEURES VENTES -------------------- */
 .catalog {
-  background-image: url("../img/background3.jpg");
+  background-image: url("../img/background-catalog.png");
   background-repeat: repeat;
   background-size: 11rem;
 }
