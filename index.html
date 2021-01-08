@@ -2,6 +2,7 @@
 <html lang="fr">
   <!-- TODO:
           - change images to open sources and add sources
+          - Convert burger picture in webP format + image format 720px
           - update and clean JS
           - check responsive display + add dynamic images (without netlify)
           - add CSS animations
@@ -93,44 +94,68 @@
       </div>
       <div class="scrolling-gallery">
         <div class="scrolling-element">
-          <img src="./img/burgers-thumbnails/Buger-Marcel.jpg" alt="Le Marcel" />
+          <picture>
+            <source type="image/webp" srcset="./img/burgers-thumbnails/Buger-Marcel.webp">
+            <source type="image/jpeg" srcset="./img/burgers-thumbnails/Buger-Marcel.jpg">
+            <img src="./img/burgers-thumbnails/Buger-Marcel.jpg" alt="Burger Marcel" />
+          </picture>
           <p>Le Marcel</p>
           <a href="#">Découvrez-le</a>
         </div>
         <div class="scrolling-element">
-          <img src="./img/burgers-thumbnails/Burger-Jeannot.jpg" alt="Le Jeannot" />
+          <picture>
+            <source type="image/webp" srcset="./img/burgers-thumbnails/Burger-Jeannot.webp">
+            <source type="image/jpeg" srcset="./img/burgers-thumbnails/Burger-Jeannot.jpg">
+            <img src="./img/burgers-thumbnails/Burger-Jeannot.jpg" alt="Burger Jeannot" />
+          </picture>
           <p>Le Jeannot</p>
           <a href="#">Découvrez-le</a>
         </div>
         <div class="scrolling-element">
-          <img src="./img/burgers-thumbnails/Burger-Gaspard.jpg" alt="Le Gaspard" />
+          <picture>
+            <source type="image/webp" srcset="./img/burgers-thumbnails/Burger-Gaspard.webp">
+            <source type="image/jpeg" srcset="./img/burgers-thumbnails/Burger-Gaspard.jpg">
+            <img src="./img/burgers-thumbnails/Burger-Gaspard.jpg" alt="Burger Gaspard" />
+          </picture>
           <p>Le Gaspard</p>
           <a href="#">Découvrez-le</a>
         </div>
         <div class="scrolling-element">
-          <img src="./img/burgers-thumbnails/Burger-Genevieve.jpg" alt="La Geneviève" />
+          <picture>
+            <source type="image/webp" srcset="./img/burgers-thumbnails/Burger-Genevieve.webp">
+            <source type="image/jpeg" srcset="./img/burgers-thumbnails/Burger-Genevieve.jpg">
+            <img src="./img/burgers-thumbnails/Burger-Genevieve.jpg" alt="Burger Geneviève" />
+          </picture>
           <p>La Geneviève</p>
           <a href="#">Découvrez-la</a>
         </div>
         <div class="scrolling-element">
-          <img src="./img/burgers-thumbnails/Burger-Jacqueline.jpg" alt="La Jacqueline" />
+          <picture>
+            <source type="image/webp" srcset="./img/burgers-thumbnails/Burger-Jacqueline.webp">
+            <source type="image/jpeg" srcset="./img/burgers-thumbnails/Burger-Jacqueline.jpg">
+            <img src="./img/burgers-thumbnails/Burger-Jacqueline.jpg" alt="Burger Jacqueline" />
+          </picture>
           <p>La Jacqueline</p>
           <a href="#">Découvrez-la</a>
         </div>
         <div class="scrolling-element">
-          <img src="./img/burgers-thumbnails/Burger-Mauricette.jpg" alt="La Mauricette" />
+          <picture>
+            <source type="image/webp" srcset="./img/burgers-thumbnails/Burger-Mauricette.webp">
+            <source type="image/jpeg" srcset="./img/burgers-thumbnails/Burger-Mauricette.jpg">
+            <img src="./img/burgers-thumbnails/Burger-Mauricette.jpg" alt="Burger Mauricette" />
+          </picture>
           <p>La Mauricette</p>
           <a href="#">Découvrez-la</a>
         </div>
       </div>
     </section>
-    <!-------------------- NOS MEILLEURES VENTES -------------------->
+    <!-------------------- NOS BURGERS DU MOMENT-------------------->
     <section class="catalog">
       <div class="top-catalog">
-        <h2 class="button-left">Nos meilleures ventes</h2>
+        <h2 class="button-left">Nos burgers du moment</h2>
         <p>
-          Meilleures ventes<br />
-          du mois
+          Offre<br />
+          temporaire
         </p>
       </div>
       <div class="catalog-product">
@@ -147,7 +172,23 @@
             <a class="buy-button" href="#">Commander</a>
           </div>
           <div class="catalog-element-ing-border">
-          <img src="./img/Bburger2.jpg" alt="top ventes numero 1" />
+            <picture>
+              <source type="image/webp"
+                      media="(max-width:720px)"
+                      srcset="./img/burgers-temp/Burger-Michel-720px.webp"
+              >
+              <source type="image/webp"
+                      srcset="./img/burgers-temp/Burger-Michel.webp"
+              >
+              <source type="image/jpeg"
+                      media="(max-width:720px)"
+                      srcset="./img/burgers-temp/Burger-Michel-720px.jpg"
+              >
+              <source type="image/jpeg"
+                      srcset="./img/burgers-temp/Burger-Michel.jpg"
+              >
+              <img src="./img/burgers-temp/Burger-Michel.jpg" alt="Burger Michel" />
+            </picture>
         </div>
         </div>
         <div class="catalog-element">
@@ -163,7 +204,23 @@
             <a class="buy-button" href="#">Commander</a>
           </div>
           <div class="catalog-element-ing-border">
-          <img src="./img/Bburger3.jpeg" alt="top ventes numero 2" />
+            <picture>
+              <source type="image/webp"
+                      media="(max-width:720px)"
+                      srcset="./img/burgers-temp/Burger-John-720px.webp"
+              >
+              <source type="image/webp"
+                      srcset="./img/burgers-temp/Burger-John.webp"
+              >
+              <source type="image/jpeg"
+                      media="(max-width:720px)"
+                      srcset="./img/burgers-temp/Burger-John-720px.jpg"
+              >
+              <source type="image/jpeg"
+                      srcset="./img/burgers-temp/Burger-John.jpg"
+              >
+              <img src="./img/burgers-temp/Burger-John.jpg" alt="Burger John" />
+            </picture>
         </div>
         </div>
         <div class="catalog-element">
@@ -179,7 +236,23 @@
             <a class="buy-button" href="#">Commander</a>
           </div>
           <div class="catalog-element-ing-border">
-          <img src="./img/Bburger3.jpeg" alt="top ventes numero 3" />
+            <picture>
+              <source type="image/webp"
+                      media="(max-width:720px)"
+                      srcset="./img/burgers-temp/Burger-Brenda-720px.webp"
+              >
+              <source type="image/webp"
+                      srcset="./img/burgers-temp/Burger-Brenda.webp"
+              >
+              <source type="image/jpeg"
+                      media="(max-width:720px)"
+                      srcset="./img/burgers-temp/Burger-Brenda-720px.jpg"
+              >
+              <source type="image/jpeg"
+                      srcset="./img/burgers-temp/Burger-Brenda-720px.jpg"
+              >
+              <img src="./img/burgers-temp/Burger-Brenda.jpg" alt="Burger John" />
+            </picture>
         </div>
       </div>
         <div class="catalog-element">
@@ -195,7 +268,23 @@
             <a class="buy-button" href="#">Commander</a>
           </div>
           <div class="catalog-element-ing-border">
-          <img src="./img/Bburger2.jpg" alt="top ventes numero 4" />
+            <picture>
+              <source type="image/webp"
+                      media="(max-width:720px)"
+                      srcset="./img/burgers-temp/Burger-Jason-720px.webp"
+              >
+              <source type="image/webp"
+                      srcset="./img/burgers-temp/Burger-Jason.webp"
+              >
+              <source type="image/jpeg"
+                      media="(max-width:720px)"
+                      srcset="./img/burgers-temp/Burger-Jason-720px.jpg"
+              >
+              <source type="image/jpeg"
+                      srcset="./img/burgers-temp/Burger-Jason.jpg"
+              >
+              <img src="./img/burgers-temp/Burger-Jason.jpg" alt="Burger Jason" />
+            </picture>
         </div>
       </div>
       </div>
