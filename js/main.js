@@ -1,5 +1,4 @@
-console.log("js fired");
-
+// Display responsive nav
 const responsiveNavButton = document.getElementById("mobile-nav-button")
 const nav= document.getElementById("nav")
 const displayResponsiveNav =()=>{
@@ -18,7 +17,6 @@ const removeShipping = () => freeShippingBlock.style.display="none";
 freeShippingCross.addEventListener("click", removeShipping);
 
 // When the user scrolls the page, execute myFunction
-
 const scrollProgres = ()=> {
   let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
   let height =
