@@ -2,7 +2,6 @@
 <html lang="fr">
   <!-- TODO:
           - add CSS animations
-          - update JS progress bar
           - audit with lighthouse
           - add link to dewemo site on click
           - add favicon
@@ -21,11 +20,11 @@
   </head>
   <body>
     <header>
-     <!--<div class="scroll-box">
+     <div class="scroll-box">
         <div class="progress-container">
             <div class="progress-bar" id="myBar"></div>
-          </div>
-        </div>-->
+        </div>
+     </div>
       <img src="./img/logo.svg" alt="logo" id="logo" />
       <!-------------------- NAV -------------------->
       <div class="navBloc">
@@ -43,9 +42,9 @@
     <section id="hero">
       <h1>La passion <br />du burger</h1>
     </section>
-    <div class="free-shipping">
+    <div id="free-shipping" class="free-shipping">
       <p>Livraison gratuite aujourd'hui</p>
-      <svg class="close"
+      <svg id="free-shipping-cross"
         xmlns="http://www.w3.org/2000/svg"
         width="48"
         height="48"

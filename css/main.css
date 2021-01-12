@@ -416,10 +416,6 @@ footer {
     font-size: 1.2rem;
   }
 
-
-  .free-shipping-close {
-    display: none;
-  }
   #hero{
     background-image: url("../img/hero/hero-720.jpg");
   }
@@ -461,7 +457,7 @@ footer {
   }
 }
 
-/* The progress container (grey background) */
+/* The progress container */
 .progress-container {
   width: 100%;
   height: 8px;

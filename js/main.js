@@ -12,22 +12,22 @@ const displayResponsiveNav =()=>{
 responsiveNavButton.addEventListener("click", displayResponsiveNav)
 
 // Close free shipping panel
-const close = document.querySelector(".close");
-const freeShipping = document.querySelector(".free-shipping");
-const removeShipping = () => freeShipping.classList.add("free-shipping-close");
-close.addEventListener("click", removeShipping);
+const freeShippingCross = document.getElementById("free-shipping-cross");
+const freeShippingBlock = document.getElementById("free-shipping");
+const removeShipping = () => freeShippingBlock.style.display="none";
+freeShippingCross.addEventListener("click", removeShipping);
 
 // When the user scrolls the page, execute myFunction
-window.onscroll = function() {
-  myFunction();
-};
 
-function myFunction() {
-  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-  var height =
+const scrollProgres = ()=> {
+  let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  let height =
     document.documentElement.scrollHeight -
     document.documentElement.clientHeight;
-  var scrolled = (winScroll / height) * 100;
+  let scrolled = (winScroll / height) * 100;
   document.getElementById("myBar").style.width = scrolled + "%";
+  console.log("toto scroll")
 }
+
+window.addEventListener("scroll", scrollProgres)
 
