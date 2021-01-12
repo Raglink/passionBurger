@@ -1,10 +1,15 @@
-console.log("it works");
+console.log("js fired");
 
-// Responsive menu
-const header = document.querySelector("header");
-const nav = document.querySelector(".mobile-nav");
-const toggleNav = () => header.classList.toggle("open");
-nav.addEventListener("click", toggleNav);
+const responsiveNavButton = document.getElementById("mobile-nav-button")
+const nav= document.getElementById("nav")
+const displayResponsiveNav =()=>{
+  if(nav.className === "responsive-nav"){
+    nav.className = "nav"
+  }else {
+    nav.className = "responsive-nav"
+  }
+}
+responsiveNavButton.addEventListener("click", displayResponsiveNav)
 
 // Close free shipping panel
 const close = document.querySelector(".close");
@@ -25,3 +30,4 @@ function myFunction() {
   var scrolled = (winScroll / height) * 100;
   document.getElementById("myBar").style.width = scrolled + "%";
 }
+

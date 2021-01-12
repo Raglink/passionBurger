@@ -1,19 +1,13 @@
 <!DOCTYPE html>
 <html lang="fr">
   <!-- TODO:
-          - change images to open sources and add sources
-          - Convert burger picture in webP format + image format 720px
-          - update and clean JS
-          - check responsive display + add dynamic images (without netlify)
           - add CSS animations
+          - update JS progress bar
           - audit with lighthouse
           - add link to dewemo site on click
           - add favicon
   -->
-  <!--
-    FIXME:
-      - responsive nav bar
-  -->
+
 
   <head>
     <meta charset="UTF-8" />
@@ -21,34 +15,29 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Passion Burger</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">=
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
     <header>
-      <div class="scroll-box">
+     <!--<div class="scroll-box">
         <div class="progress-container">
             <div class="progress-bar" id="myBar"></div>
           </div>
-        </div>
+        </div>-->
       <img src="./img/logo.svg" alt="logo" id="logo" />
       <!-------------------- NAV -------------------->
-      <nav class="desktop-nav">
-        <ul>
-          <li>Nos burgers</li>
-          <li>Nos meilleures ventes</li>
-          <li>Commandez en ligne</li>
-        </ul>
-      </nav>
-      <nav class="mobile-nav">
-          <svg class="nav-svg" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="arcs"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
-        <ul>
-            <li>Nos burgers</li>
-            <li>Nos meilleures ventes</li>
-            <li>Commandez en ligne</li>
+      <div class="navBloc">
+        <svg id="mobile-nav-button" class="nav-svg" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="arcs"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        <nav id="nav" class="nav">
+          <ul>
+            <li><a href="./index.html">Nos burgers</a></li>
+            <li><a href="./index.html">Nos meilleures ventes</a></li>
+            <li><a href="./index.html">Commandez en ligne</a></li>
           </ul>
         </nav>
+      </div>
     </header>
     <!-------------------- HERO -------------------->
     <section id="hero">
@@ -289,7 +278,7 @@
       </div>
       </div>
       <div class="button-div">
-        <button class="button" href="#">Découvrez les tous</button>
+        <button class="button" href="./index.html">Découvrez les tous</button>
       </div>
     </section>
     <!-------------------- NOTRE PHILOSOPHIE -------------------->

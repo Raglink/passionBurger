@@ -69,10 +69,17 @@ header {
   padding-right: 10px;
   padding-left: 10px;
   height: 4rem;
-  position: relative;
 }
 #logo {
   width: 400px;
+}
+.navBloc {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+#mobile-nav-button {
+  visibility: hidden;
 }
 
 nav ul {
@@ -86,6 +93,10 @@ nav li {
   text-transform: uppercase;
   font-weight: 500;
 }
+
+nav li a {
+  color: var(--tomate);
+}
 /* -------------------- HERO -------------------- */
 #hero {
   height: 35vw;
@@ -96,12 +107,6 @@ nav li {
   display: flex;
   align-items: flex-end;
 }
-/* #hero-img {
-  width: 100%;
-  height: 40vw;
-  max-height: 460px;
-  object-fit: cover;
-} */
 
 .free-shipping {
   display: flex;
@@ -370,22 +375,33 @@ footer {
 }
 /* --------------------  SMALL SCREEN RULES  -------------------- */
 @media (max-width: 600px) {
-  .sauces {
-    display: none;
+    .sauces {
+      display: none;
+    }
   }
-}
 
 @media (max-width: 720px) {
-  .desktop-nav {
+  header{
+    position: fixed;
+    background-color: var(--wood);
+    z-index: 100;
+  }
+  #logo {
+    max-width: 85%;
+  }
+  #mobile-nav-button {
+    visibility: visible;
+    color: var(--tomate);
+    width: 30px;
+
+  }
+  .nav {
     display: none;
   }
-  .mobile-nav {
+  .responsive-nav {
     display: flex;
   }
-  .mobile-nav svg {
-    color: var(--tomate);
-  }
-  .mobile-nav ul {
+  .responsive-nav ul {
     display: flex;
     flex-direction: column;
     top: 3rem;
@@ -394,14 +410,13 @@ footer {
     width: 100%;
     background-color: var(--wood);
   }
-  .mobile-nav li {
+  .responsive-nav li  {
     text-align: center;
     padding: 0.5rem;
     font-size: 1.2rem;
   }
-  .open .mobile-nav ul {
-    display: none;
-  }
+
+
   .free-shipping-close {
     display: none;
   }
