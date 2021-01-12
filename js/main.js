@@ -24,7 +24,6 @@ const scrollProgres = ()=> {
     document.documentElement.clientHeight;
   let scrolled = (winScroll / height) * 100;
   document.getElementById("myBar").style.width = scrolled + "%";
-  console.log("toto scroll")
 }
 
 window.addEventListener("scroll", scrollProgres)
